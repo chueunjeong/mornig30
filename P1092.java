@@ -1,4 +1,7 @@
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
+import java.util.Stack;
 import java.util.stream.Stream;
 
 public class P1092 {
@@ -27,6 +30,20 @@ public class P1092 {
 
     public static int getNumberOfMoves(int[] craneList, int[] boxWeightList){
         
+        //먼저, 크레인과 박스들 정렬
+        Arrays.sort(craneList);
+        Arrays.sort(boxWeightList);
+        
+
+        //Creating a stack 
+        Stack<Integer> STACK = new Stack<Integer>(); 
+  
+        //Adding array to stack 
+        for(Integer boxWeight : boxWeightList) STACK.add(boxWeight);
+        
+        //이동 횟수용 변수
+        int moveCount=0;
+
         
         
         return 0;
