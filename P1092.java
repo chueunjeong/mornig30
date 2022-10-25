@@ -25,6 +25,7 @@ public class P1092 {
             int[] boxesWeightList=Stream.of(boxesWeightListStr.split(" ")).mapToInt(Integer::parseInt).toArray();
 
             int result=getNumberOfMoves(craneLimitWeightList,boxesWeightList);
+            
             System.out.println(result);
         }
        
